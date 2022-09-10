@@ -1,0 +1,76 @@
+###
+POST http://localhost:5000/users/create-user
+Content-Type: application/json
+
+{
+    "first_name": "Dana",
+    "middle_name": "G",
+    "last_name": "White",
+    "mobile_number": "897-631-1903",
+    "alternate_mobile_number": "961-911-9307",
+    "address" : "146 Timberbrook Lane, Greeley, Colorado(CO), 80631",
+    "username": "stingygoat",
+    "password": "qwerty@1234"
+}
+
+###
+GET http://localhost:5000/users
+
+###
+PUT http://localhost:5000/users/update-user/Donald-Henderson
+Content-Type: application/json
+
+{
+    "first_name": "Donald",
+    "middle_name": "G",
+    "last_name": "Trump",
+    "mobile_number": "970-301-2022",
+    "alternate_mobile_number": "970-336-2020",
+    "address" : "146 Timberbrook Lane, Greeley, Colorado(CO), 80631",
+    "username": "donaldgt",
+    "password": "donald43gt"
+}
+
+###
+DELETE http://localhost:5000/users/delete-user/Donald-Henderson
+
+
+
+
+
+
+
+###
+GET http://localhost:5000/vehicles
+
+
+###
+POST http://localhost:5000/vehicles/add-vehicle-information
+Content-Type: application/json
+
+{
+    "vehicle_number": "MH-04-2017",
+    "rc_registration_date": "23-12-2022",
+    "rc_expiration_date": "04-5-2022",
+    "puc_registration_date": "30-01-2023",
+    "puc_expiration_date": "12-07-2023",
+    "insurance_registration_date": "23-11-2021",
+    "insurance_expiration_date": "22-11-2022"
+}
+
+###
+PUT http://localhost:5000/vehicles/update-vehicle-information/MH-04-2017
+Content-Type: application/json
+
+{
+    "vehicle_number": "MH-04-2017",
+    "rc_registration_date": "23-12-2022",
+    "rc_expiration_date": "04-5-2022",
+    "puc_registration_date": "30-01-2023",
+    "puc_expiration_date": "12-07-2023",
+    "insurance_registraion_date": "23-11-2021",
+    "insurance_expiration_date": "22-11-2050"
+}
+
+###
+DELETE http://localhost:5000/vehicles//delete-vehicle-information/MH-04-2017
