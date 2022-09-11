@@ -22,7 +22,7 @@ const UpdateUserForm = ({userData}) => {
   async function handleSubmit(e) {
     e.preventDefault();
     console.log("I got pressed.");
-		const url = 'http://localhost:5000/users/update-user/' + userID;
+		const url = '/api/users/update-user/' + userID;
 		console.log(url);
 
 		const response = await fetch(url, {

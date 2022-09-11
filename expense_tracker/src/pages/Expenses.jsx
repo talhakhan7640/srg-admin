@@ -19,13 +19,11 @@ const Employees = () => {
     setExpenses(expenseList);
   }
 
-  console.log(expenses)
-
   const columns = [
     { field: "id", headerName: "ID", width: 70 },
-    { field: "Expense", headerName: "Expense", width: 130 },
-    { field: "Vehicle Number", headerName: "Vehicle Number", width: 130 },
-    { field: "Cost", headerName: "Cost", width: 130 }
+    { field: "Expense", headerName: "Expense", width: 200 },
+    { field: "Vehicle Number", headerName: "Vehicle Number", width: 200 },
+    { field: "Cost", headerName: "Cost", width: 200 }
   ];
 
   var data = []
@@ -47,8 +45,6 @@ const Employees = () => {
           <span className="component-number  mr-6 p-1 bg">~</span>
            Expense Table
           </h1>
-
-          <div className="text-white">end</div>
       </div>
       <DataGrid
         sx={{

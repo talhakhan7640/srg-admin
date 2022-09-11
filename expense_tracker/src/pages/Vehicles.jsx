@@ -58,7 +58,7 @@ const Vehicles = () => {
     setRows(rows.filter((row) => row.id !== id));
     console.log("Del button got pressed");
     var colID = rows[id].data.Vehicle_Number;
-    const url = "http://localhost:5000/vehicles//delete-vehicle-information/";
+    const url = "/api/vehicles/delete-vehicle-information/";
     await fetch(
       url + colID,
       {

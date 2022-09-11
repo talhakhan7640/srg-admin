@@ -17,7 +17,7 @@ const AddVehicleForm = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     console.log(vehicleDetails);
-    const url = "http://localhost:5000/vehicles/add-vehicle-information";
+    const url = "/api/vehicles/add-vehicle-information";
     await fetch(
       url,
       {

@@ -20,7 +20,7 @@ const AddUserForm = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     // console.log("I got pressed.");
-    const url = "http://localhost:5000/users/create-user";
+    const url = "/api/users/create-user";
     await fetch(url, {
       method: "POST",
       headers: {

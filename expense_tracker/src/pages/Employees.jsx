@@ -61,7 +61,7 @@ const Employees = () => {
     setRows(rows.filter((row) => row.id !== id));
     console.log("Del button got pressed");
     var colID = rows[id].data.First_Name + "-" + rows[id].data.Last_Name;
-    const url = "http://localhost:5000/users/delete-user/";
+    const url = "/api/users/delete-user/";
     await fetch(url + colID, {
       method: "DELETE",
     }, window.location.reload());
