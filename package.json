@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "heroku-postbuild": " npm install --prefix ../expense_tracker && npm run build --prefix ../expense_tracker"
+    "heroku-postbuild": " npm install --prefix expense_tracker && npm run build --prefix expense_tracker"
   },
   "author": "",
   "license": "ISC",
