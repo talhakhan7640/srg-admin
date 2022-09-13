@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
-    "heroku-postbuild": "cd expense_tracker && npm install --only=dev && npm install && npm run build"
+    "start": "cd server && npm start",
+    "start-client": "node index.js",
+    "build": "react-scripts build && (cd server && npm install)",
+    "heroku-postbuild": " npm install --prefix ../expense_tracker npm run build --prefix ../expense_tracker"
   },
   "author": "",
   "license": "ISC",
