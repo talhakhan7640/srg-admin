@@ -8,7 +8,7 @@
     "start": "cd server && npm start",
     "start-client": "node index.js",
     "build": "react-scripts build && (cd server && npm install)",
-    "heroku-postbuild": " npm install --prefix ../expense_tracker npm run build --prefix ../expense_tracker"
+    "heroku-postbuild": " npm install --prefix ../expense_tracker && npm run build --prefix ../expense_tracker"
   },
   "author": "",
   "license": "ISC",
