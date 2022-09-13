@@ -5,9 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "cd server && npm start",
-    "start-client": "node index.js",
-    "build": "react-scripts build && (cd server && npm install)",
+    "start": "nodemon index.js",
     "heroku-postbuild": " npm install --prefix ../expense_tracker && npm run build --prefix ../expense_tracker"
   },
   "author": "",
